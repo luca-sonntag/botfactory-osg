@@ -38,7 +38,7 @@
   "description": "Logic-less {{mustache}} templates with JavaScript",
   "devDependencies": {
     "chai": "^3.4.0",
-    "eslint": "2.5.1",
+    "eslint": "6.8.0",
     "jshint": "^2.9.5",
     "mocha": "^3.0.2",
     "uglify-js": "^3.4.6",
