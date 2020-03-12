@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/mustache/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style/style.css?v=2" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#679600">
+</head>
+
+<body class="darkmodeTheme">
+
+    <div id="header">
+        <div id="header-layer1">
+            <div>Online Strategy Builder</div>
+        </div>
+        <div id="header-layer2">
+            <div class="town-text" style="flex: 1">
+                <div class="town-header">SPORTART</div>
+                <div class="town-content" id="sportType"></div>
+            </div>
+
+            <div class="town-text" style="font-size: 16px; text-align: right; display: flex; justify-content: center;">
+                <div class=" town-header" style="font-size: 1em">GESAMTEINSATZ %</div>
+                <div class="town-content" id="sollGesamteinsatz" style="font-size: 1.5em; margin-top: -6px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div style="display: flex; flex-direction: row; margin: 0 10px 10px 15px">
+            <div class="town-input">
+                <div class="town-header ">TITEL</div>
+                <div class="town-content ">
+                    <input class="material-input-text" id="title" type="text" value="" style="width: 95%;" />
+                </div>
+            </div>
+
+            <div class="town-input">
+                <div class="town-header" style="text-align: right;">FAKTOR</div>
+                <div id="checkboxes" class="town-content" style="display: flex; flex-direction: row; justify-content: right;">
+                    <div class="material-checkbox checkbox-checked">
+                        <div value="1">1</div>
+                    </div>
+                    <div class="material-checkbox checkbox-unchecked">
+                        <div value="1.5">1½</div>
+                    </div>
+                    <div class="material-checkbox checkbox-unchecked">
+                        <div value="2">2</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="table">
+            <div id="table-header" class="table-grid">
+                <div class="col1">STRATEGIE</div>
+                <div class="col2">QUOTE</div>
+                <div class="col3">EINSATZ %</div>
+                <div class="col4">GES. %</div>
+            </div>
+
+            <div class="table-line"></div>
+
+            <div id="strategy-box"></div>
+
+            <div id="table-footer" class="table-grid">
+                <div class="col1">GESAMTEINSATZ</div>
+                <div class="col4" id="istGesamteinsatz"></div>
+            </div>
+
+            <div id="error-box">
+
+            </div>
+
+            <button id="submitBtn" class="btn" style="margin: 15px 0 0 15px"><i class="fa fa-check-circle"></i> SPEICHERN </button>
+
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-success-content" style="display: none">
+                <div>
+                    <img src="res/check_circle-24px.svg">
+                    <span id="modal-success-text">Strategie wurde erfolgreich gespeichert!</span>
+                </div>
+            </div>
+
+            <div id="modal-unsuccess-content" style="display: none">
+                <div>
+                    <img src="res/uncheck_circle-24px.svg">
+                    <p id="modal-unsuccess-text">Ein Fehler ist beim Speichern aufgetreten!</p>
+                </div>
+                <span><strong>Error: </strong><span id="modal-errorcode">3232</span></span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #56749E;
+    --primary-color-darker: #4d6a94;
+    --button-color: var(--primary-color);
+    --button-color-pressed: var(--primary-color-darker);
+    --background-color: white;
+    --foreground-color-wobg: #4A4A4A;
+    --table-line-color: rgba(74, 74, 74, 0.575);
+}
+
+.footballTheme {
+    --primary-color: #80bb00;
+    --primary-color-darker: #679600;
+    --button-color: var(--primary-color);
+    --button-color-pressed: var(--primary-color-darker);
+    --background-color: white;
+    --foreground-color-wobg: #4A4A4A;
+    --table-line-color: rgba(74, 74, 74, 0.575);
+}
+
+.basketballTheme {
+    --primary-color: #FFA200;
+    --primary-color-darker: #BF7A00;
+    --button-color: var(--primary-color);
+    --button-color-pressed: var(--primary-color-darker);
+    --background-color: white;
+    --foreground-color-wobg: #4A4A4A;
+    --table-line-color: rgba(74, 74, 74, 0.575);
+}
+
+.darkmodeTheme {
+    --primary-color: #80bb00;
+    --primary-color-darker: #679600;
+    --button-color: var(--primary-color);
+    --button-color-pressed: var(--primary-color-darker);
+    --background-color: #434343;
+    --foreground-color-wobg: white;
+    --table-line-color: rgba(117, 117, 117, 0.575);
+}
+
+#table-header div {
+    color: var(--foreground-color-wobg) !important;
+}
+
+.table-line {
+    color: var(--foreground-color-wobg) !important;
+    border-top: 1px solid var(--table-line-color) !important;
+}
+
+#strategy-box div {
+    color: var(--foreground-color-wobg) !important;
+}
+
+#table-footer div {
+    color: var(--foreground-color-wobg) !important;
+}
+
+.town-input .town-header {
+    color: var(--foreground-color-wobg) !important;
+}
+
+input {
+    color: var(--foreground-color-wobg) !important;
+}
+
+body {
+    background: var(--background-color) !important;
+}
+
+#header #header-layer1 {
+    background: var(--primary-color-darker) !important;
+}
+
+#header #header-layer2 {
+    background: var(--primary-color) !important;
+    ;
+}
+
+.checkbox-checked {
+    background: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+}
+
+.checkbox-unchecked {
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+}
+
+.btn {
+    background-color: var(--button-color) !important;
+}
+
+.btn:hover {
+    background-color: var(--button-color-pressed) !important;
+}
+
+.btn[disabled=""] {
+    background: gray !important;
+}
+
+.material-input-text {
+    border-bottom: 1px solid var(--table-line-color) !important;
+}
+
+.material-input-text:focus {
+    border-bottom: 1px solid var(--table-line-color) !important;
+}
