@@ -1,0 +1,27 @@
+{
+    "internalId": "FB",
+    "sportType": "Fussball",
+    "versionId": -1,
+    "title": "FB Standard System",
+    "stake": 0.06,
+    "stakeFactor": 1,
+    "strategies": [{
+            "gameUnit": 1,
+            "descriptionId": 0,
+            "title": "FB 1. HT Mehr als ${line} Tore",
+            "scope": "system",
+            "line": 0.5,
+            "stake": 0.015,
+            "odds": 1.40
+        },
+        {
+            "gameUnit": 2,
+            "descriptionId": 1,
+            "title": "FB 2. HT Mehr als ${line} Tore",
+            "scope": "system",
+            "line": 0.5,
+            "stake": 0.045,
+            "odds": 1.40
+        }
+    ]
+}
